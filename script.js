@@ -128,41 +128,6 @@ function nav(){
 }
 nav()
 
-// function nav2(){
-//   var cart = document.querySelector('#icons #cart');
-//   var cross = document.querySelector('#full2 i');
-//   var tl = gsap.timeline();
-
-//   // Open full2 (slide it down from the top)
-//   tl.to('#full2', {
-//     top: 0,
-//     duration: 0.5,
-//   });
-
-//   // Animate elements inside #full2
-//   tl.from('#full2 h4', {
-//     y: 40,
-//     duration: 0.1,
-//     opacity: 0,
-//     stagger: 0.05,
-//   });
-
-//   // Pause the timeline to start only when triggered
-//   tl.pause();
-
-//   // Click event to trigger the open animation
-//   cart.addEventListener('click', function(){
-//     tl.timeScale(1); 
-//     tl.play();
-//   });
-
-//   // Click event to trigger the close animation (slide it back up)
-//   cross.addEventListener('click', function(){
-//     tl.timeScale(3);
-//     tl.reverse();
-//   });
-// }
-// nav2();
 
 function nav2() {
   var cart = document.querySelector('#icons #cart');
@@ -183,7 +148,7 @@ function nav2() {
     stagger: 0.05,
   });
 
-  // Infinite scroll animation on text inside #full2
+
   gsap.to('#full2 h4', {
     y: -200, // Move the text upwards
     duration: 10, // Duration for the full scroll
